@@ -40,7 +40,7 @@ export class App extends Component {
       <div className={css.container}>
         <Section title="PLEASE LEAVE FEEDBACK">
           <FeedbackOptions
-            options={['good', 'neutral', 'bad']}
+            options={Object.keys(this.state)}
             onLeaveFeedback={this.handleFeedback}
           />
         </Section>
